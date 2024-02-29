@@ -1,10 +1,15 @@
 Code of Conduct:
 
+*Failure to comply with the rules will result in a random penalty, depending on severity of rule break*
+
+
+
 Expected behaviour:
 
 - Be respectful of every member and their ideas
 - Decisions must be made in a democratic manner
 - Any requests to make modifications to the code of conduct must be agreed upon by the whole group
+
 
 
 
@@ -17,7 +22,6 @@ All group members must adhere to these rules:
 - The whole team must review the work together before submission
 - Must communicate to the whole group regularly **
 - Every team member must submit their work on time **
-- Failure to comply with the rules will result in a random penalty, depending on severity of rule break
 - Every Monday before the submission deadline, each member must attend an in-person group meeting. If this rule is broken more than 4 times for the duration of the project, a major penalty will be issued to the offender **
 - Meetings must not be attended more than 10 minutes late *
 - All absences must be discussed with all group members - once a member is absent four or more times higher-ups may be contacted 
