@@ -1,0 +1,12 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.7.0
+jobs:
+  build:
+    working_directory: ~/Software_Engineering/src
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout:
+          path: ~/Software_Engineering
+      - run: npm install
