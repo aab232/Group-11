@@ -65,6 +65,10 @@ app.post("/cities/:id", async (req, res) => {
     return res.redirect(`/cities/${cityId}`);
 });
 
+// Add data to the database
+
+
+
 // Returns JSON array of cities
 app.get("/api/cities", async (req, res) => {
     const [rows, fields] = await db.getCities();
