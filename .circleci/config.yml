@@ -1,26 +1,14 @@
 version: 2.1
+
 jobs:
-  build:
+  hello-job:
     docker:
-      - image: circleci/buildpack-deps:bionic-curl
+      - image: cimg/node:17.2.0               # the primary container, where your job's commands are run
     steps:
-      - checkout
-      - setup_remote_docker
-      - run:
-          name: Build container
-          command: docker-compose build
-      - run:
-          name: Run container
-          command: docker-compose up -d
-  
-  router-tests:
-    docker:
-      - image: cimg/node:21.7.1
-    working_directory: ~/.circleci/config.yml
-    steps:
-      - checkout
-      - run:
-          name: Current Directory
-          command: |
-            cd src
-            npm install
+      - checkout                              # check out the code in the project directory
+      - run: echo "hello world"               # print 'hello world'
+
+workflows:
+  my-workflow:                                # Name of the workflow. You can additional workflows below.
+    jobs:                                     # The jobs to run as part of this workflow
+      - hello-job  
