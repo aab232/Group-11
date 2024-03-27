@@ -16,7 +16,7 @@ jobs:
   router-tests:
     docker:
       - image: cimg/node:21.7.1
-    working_directory: ~/project/src
+    working_directory: ~/.circleci/config.yml
     steps:
       - checkout
       - run:
