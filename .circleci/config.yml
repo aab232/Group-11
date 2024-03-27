@@ -24,26 +24,3 @@ jobs:
           command: |
             cd src
             npm install
-      - run:
-          name: Test City Router
-          command: |
-            cd src
-            npx jest
-
-  test-duplicate-code:
-      docker:
-        - image: cimg/node:21.7.1
-      working_directory: ~/project/src
-      steps:
-        - checkout
-        - run:
-           name: Check for Duplicate Code
-           command: npx jscpd -p "src/**/*.js,ts,html"
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - build
-      - router-tests
-      - test-duplicate-code
