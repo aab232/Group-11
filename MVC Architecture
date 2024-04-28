@@ -1,0 +1,21 @@
+Model-View-Controller is a pattern in doftware design commonly used to implement user interfaces, data and controlling logic.
+
+It emphasises a seperation between the software's business logic and display.
+
+There are three parts of the MVC software-design pattern, which are described as follows:
+
+1. Model : Manages data and business logic
+2. View : Handles layout and display
+3. Controller : Routes commands to the model and view parts
+
+Model :
+
+The model defines what data the app should contain. If the state of this data changes, then the model will usually notify the view (so the display can change as needed) and sometimes the controller (if different logic is needed to control the updated view).
+
+View :
+
+The view defines how the app's data should be dispalyed.
+
+Controller : 
+
+The controller contains logic that updates the model and/or view in response to input from the users of the app.
